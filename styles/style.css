@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+	margin: 0;
+ 	padding: 0;
+ 	background-image: linear-gradient(to bottom right, #404046, #28282F);
+ 	color: white;
+ 	font-family: Verdana, sans-serif;
+ 	font-size: 13px;
+ 	height: 100vh;
+  }
+
+  header img {
+  	padding: 15px;
+  	width: 80vw;
+  	padding-left: 3%
+  }
+
+  h1{
+  	padding: 0px 15px 0px 15px;
+  	font-weight: 400;
+  }
+
+  h2{
+  	font-size: 1.1em;
+  	 color: #1BADCF;
+  	 padding-left: 10px;
+  	 margin: 0px;
+  }
+
+
+.flex-container{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1% 3% 1% 3%;
+}
+
+.flex-item{
+	width: 100%;
+	padding: 10px;
+	margin-top: 2%; 
+	background-color: #3E434B;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.flex-item-map{
+	width: 100%;
+	padding: 10px;
+	margin-top: 2%; 
+	background-color: #3E434B;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+
+.flex-item-map #map { 
+  	width: 100%;
+  	height: 40vh;
+  }
+
+.knop {
+	width: 95.5%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+ 	background-image: linear-gradient(to bottom right, #1BADCF, #21D27F);
+	margin: 10px;
+}
+
+#names{
+	width: auto;
+	height: auto;
+	color: #21D27F;
+}
+
+#names b{
+	color: #21D27F;
+	font-size: 4em;
+	padding: 10px;
+
+}
+
+#weather{
+	padding: 10px;
+}
+
+#weather2{
+	padding: 10px;
+}
+
+#weather3{
+	padding: 10px;
+}
+
+.marker {
+	background-image: url('../images/Space-X.jpeg');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 3px solid #21D27F;
+}
+.mapboxgl-popup {
+	max-width: 200px;
+	color: grey;
+}
+.mapboxgl-popup-content {
+	text-align: center;
+}
+
+/* breakpoint 1 */
+@media screen and (min-width: 768px) {
+
+	header img {
+	  	width: 30vw;
+	 }
+
+	.flex-item{
+		width: 47%;
+
+	}
+
+	.knop {
+		width: 50%;
+		
+	}
+  
+
+ 
+}
+
+/* breakpoint 2 */
+@media screen and (min-width: 1023px) {
+	body{
+		font-size: 14px;
+	}
+
+	header img {
+	  	width: 20vw;
+	 }
+
+	.flex-item{
+		width: 47%;
+
+	}
+
+	.knop {
+		width: 50%;
+		
+	}
+
+	#map { 
+  	height: 60vh;
+  }
+
+  
+
+ 
+}
+
+/* breakpoint 3 */
+@media screen and (min-width: 1280px) {
+
+	body{
+		font-size: 16px;
+	}
+
+	header img {
+	  	width: 15vw;
+	}
+
+	.flex-container{
+		padding: 0% 3% 0% 3%;
+	}
+
+	.knop {
+		width: 40%;
+		
+	}
+  
+
+
+}
